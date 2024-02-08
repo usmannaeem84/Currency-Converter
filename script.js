@@ -55,7 +55,7 @@ console.log(rate);
 let Inputvalue  =  document.querySelector("input").value
 
 result.style.display="block"
-if(Inputvalue<=1  || Inputvalue===""){
+if(Inputvalue<1  || Inputvalue===""){
     result.style.color="red"
     result.innerHTML="Enter a value greater than 1 "
 }
