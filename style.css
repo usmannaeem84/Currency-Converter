@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+}
+
+main {
+    flex-direction: column;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to top, #3ee2ff, #11073d);
+
+}
+h1{
+    display: flex;
+    text-align: left;
+    
+    color: #43b0ff;
+
+    width: 90%;
+}
+hr{
+    color: black;
+    width: 100%;
+    margin-top: 15px;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 1rem;
+    padding: 20px 12px;
+    width: 35%;
+    margin: 20px 0px;
+}
+
+.Input {
+    display: flex;
+    margin: 20px 0px;
+    flex-direction: column;
+    font-size: 18px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    width: 90%;
+}
+
+input {
+    width: 100%;
+    height: 40px;
+    padding-left: 12px;
+    border: 1px solid gray;
+    font-size: 18px;
+    outline: none;
+    margin: 8px 0px;
+    border-radius: 6px;
+}
+
+.convert {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 90%;
+}
+
+.FromPic,.ToPic {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0.5rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+    padding: 5px;
+    border: 1px solid rgb(179, 170, 170);
+    margin-top: 8px;
+    
+}
+
+.FromPic img ,.ToPic  img{
+    height: 50px;
+}
+
+select,
+option {
+    border: 0;
+    background-color: transparent;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.result {
+    margin-top: 20px;
+
+    border-radius: 8px;
+    width: 90%;
+    border: 1px solid #11073d;
+display: none;
+    padding: 10px 10px;
+}
+.result span{
+    color: #43b0ff;
+}
+.restart {
+    position: relative;
+    display: inline-block;
+    margin: 15px;
+    padding: 10px 30px;
+    text-align: center;
+    font-size: 17px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #4025ac;
+    background: transparent;
+    cursor: pointer;
+    transition: ease-out 0.5s;
+    border: 2px solid #43b0ff;
+    border-radius: 10px;
+    width: 90%;
+    box-shadow: inset 0 0 0 0 #43b0ff;
+}
+
+.restart:hover {
+    color: white;
+    box-shadow: inset 0 -100px 0 0 #43b0ff;
+}
+
+.restart:active {
+    transform: scale(0.9);
+}
+
+@media (max-width:700px) {
+    .container{
+        width: 90%;
+        padding:20px 4px ;
+    }
+    .FromPic img,.ToPic img{
+        height: 40px;
+    }
+}
